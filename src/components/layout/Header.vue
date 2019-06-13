@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-white" href="#">
+      <a class="navbar-brand text-white" href="/">
         <h1>User Management</h1>
       </a>
       <button

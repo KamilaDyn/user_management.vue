@@ -259,15 +259,7 @@ export default {
   }
 };
 </script>
-<style >
-h4 {
-  color: rgb(192, 192, 192);
-}
-.back {
-  background-color: rgb(25, 25, 112);
-  color: white;
-}
-</style>
+
 <style scoped>
 h5 {
   color: rgb(25, 25, 112);

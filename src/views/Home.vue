@@ -39,3 +39,41 @@ export default {
   }
 };
 </script>
+<style >
+body {
+  max-width: 1200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+i {
+  color: rgb(25, 25, 112);
+}
+h4 {
+  color: rgb(192, 192, 192);
+}
+.back {
+  background-color: rgb(25, 25, 112);
+  color: white;
+}
+.container {
+  width: 100vw;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 90vw;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 80vw;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    width: 70vw;
+  }
+}
+</style>

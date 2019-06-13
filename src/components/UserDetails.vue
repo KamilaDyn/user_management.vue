@@ -7,8 +7,8 @@
 
         <button class="btn btn-danger text-white del" @click="deleteUser(user.id)">Delete</button>
       </span>
-      <div>
-        <div class="card mt-3" style="width: 80vw;">
+      <div class="card-data">
+        <div class="card mt-3">
           <div class="card-body">
             <h2 class="card-title">{{user.name}}</h2>
             <ul class="list-group">
@@ -34,7 +34,7 @@
                 <h5>Delivery Address</h5>
               </strong>
             </li>
-            <!-- <div v-for="street in user" v-bind:key="street.id"> -->
+
             <div>
               <ul>
                 <li class="list-group-item">
@@ -96,12 +96,10 @@
 </template>
 
 <script>
-
 import router from "../router";
 import axios from "axios";
 export default {
   name: "userdetails",
-
 
   data() {
     return {
@@ -147,6 +145,23 @@ export default {
 h2,
 h5 {
   color: rgb(25, 25, 112);
+}
+@media (min-width: 500px) {
+  .card-data {
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) {
+  .card-data {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-data {
+    width: 70%;
+  }
 }
 </style>
 

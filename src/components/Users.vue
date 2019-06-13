@@ -48,7 +48,6 @@ export default {
   },
   props: ["users"],
   components: {
-   
     Alert
   },
   computed: {
@@ -80,9 +79,5 @@ th {
   padding: 20px;
 }
 </style>
-<style >
-i {
-  color: rgb(25, 25, 112);
-}
-</style>
+
 

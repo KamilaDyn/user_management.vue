@@ -270,10 +270,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  width: 80vw;
-  margin: auto;
-}
 h1 {
   text-align: center;
   color: rgb(25, 25, 112);
