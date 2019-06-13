@@ -1,9 +1,10 @@
 const express = require("express");
-const port = process.env.Port || 8080;
+const serveStatic = require("serveStatic");
 const app = express();
+const path = require("path");
 
-app.use(express.static(__dirname + "/dist/"));
-app.get(/.*/, function(req, res) {
-  res.sendfile(__dirname + "/dist/index.html");
-});
+app.use("/", serveStatic(path.join(__dirname, "/dist/")));
+const port = process.env.Port || 8080;
 app.listen(port);
+
+console.log("listening port" + port);
